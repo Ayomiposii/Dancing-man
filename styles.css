@@ -1,0 +1,180 @@
+.dancing-man {
+    position: relative;
+    height: 200px;
+    width: 100px;
+    margin: 0 auto;
+    animation: dance 2s ease-in-out infinite;
+}
+.head {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: #ffc0cb;
+    border-radius: 50% 50% 50% 50%;
+}
+/* .eyes {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+.left-eye {
+    position: absolute;
+    top: -70%;
+    left: 32%;
+    height: 2%;
+    width: 15%;
+    background-color: #e6173a;
+    border-radius: 50% 50% 50% 50%;
+}
+.right-eye {
+    position: absolute;
+    top: -70%;
+    left: 52%;
+    height: 2%;
+    width: 15%;
+    background-color: #e11c3d;
+    border-radius: 50% 50% 50% 50%;
+}
+.nose {
+     position: absolute;
+    top: 23%;
+    left: 45%;
+    height: 5%;
+    width: 8%;
+    background-color: #e11c3d;
+    border-radius: 50% 50% 50% 50%;
+}
+.mouth {
+     position: absolute;
+    top: 35%;
+    left: 40%;
+    height: 2%;
+    width: 20%;
+    background-color: #e11c3d;
+    border-radius: 50% 50% 50% 50%;
+} */
+.body {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background-color: #1e90ff;
+    border-radius: 50% 50% 70% 70%;
+}
+.hands {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+.left-hand {
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    height: 60%;
+    width: 20%;
+    background-color: #ffc0cb;
+    border-radius: 20% 20% 40% 40%;
+    animation: left-leg 2s ease-in-out infinite;
+}
+.right-hand {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    height: 60%;
+    width: 20%;
+    background-color: #ffc0cb;
+    border-radius: 20% 20% 40% 40%;
+    animation: right-leg 2s ease-in-out infinite;
+}
+.legs {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    height: 60%;
+}
+.left-leg {
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    height: 60%;
+    width: 20%;
+    background-color: #ffc0cb;
+    border-radius: 20% 20% 40% 40%;
+    animation: left-leg 2s ease-in-out infinite;
+}
+.right-leg {
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    height: 60%;
+    width: 20%;
+    background-color: #ffc0cb;
+    border-radius: 20% 20% 40% 40%;
+    animation: right-leg 2s ease-in-out infinite;
+}
+@keyframes dance {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes left-hand {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    } 
+    25% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+}
+@keyframes right-hand {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    } 
+    25% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+}
+@keyframes left-leg {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    } 
+    25% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+}
+@keyframes right-leg {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    } 
+    25% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+}
